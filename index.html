@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>online phone api</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.6.2/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Roboto:wght@300;400;500&family=Work+Sans:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      /* Font family */
+      body {
+        font-family: "Poppins", sans-serif;
+      }
+
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        font-family: "Roboto", sans-serif;
+      }
+
+      p {
+        font-family: "Work Sans", sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <section class="relative">
+        <img
+          class="w-[100%]"
+          src="pngtree-cool-new-mobile-phone-promotion-purple-banner-image_183067.jpg"
+          alt=""
+        />
+        <div class="max-w-7xl mx-auto">
+          <div
+            class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+          >
+            <h1 class="lg:text-5xl font-bold text-white mb-2">
+              Apple Iphone 13 Pro Max
+            </h1>
+            <p class="lg:text-sm font-medium text-white">
+              There are many variations of passages of Lorem Ipsum available,
+              but the majority have suffered alteration in some form, by
+              injected humor.
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="mt-12 w-[450px] absolute botom-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+        >
+          <img
+            src="./3ad0fe8ae7f337e440c389d0ae299c55-removebg-preview.png"
+            alt=""
+          />
+        </div>
+      </section>
+
+      <section class="mt-96 text-center mb-40">
+        <div class="mb-16">
+          <h1 class="text-4xl font-semibold mb-3">Search your phone</h1>
+
+          <input
+            id="inputField"
+            type="text"
+            placeholder="Type here"
+            class="input input-bordered input-secondary w-full max-w-xs"
+          />
+          <button onclick="handleSearch()" class="btn btn-primary">
+            Applay
+          </button>
+        </div>
+      </section>
+
+      <!-- loading sppiner -->
+
+      <!-- card -->
+      <section class="max-w-7xl mx-auto">
+        <div id="loading-spinners" class="text-center mb-28 hidden">
+          <span class="loading loading-spinner loading-lg mb-40"></span>
+        </div>
+
+        <div
+          id="ShowsPhones-container"
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5"
+        ></div>
+
+        <div id="showAllContainer" class="text-center mt-10 hidden">
+          <button onclick="handleShowAll()" class="btn btn-primary">allShow</button>
+        </div>
+      </section>
+
+      <section>
+        <!-- Open the modal using ID.showModal() method -->
+
+        <dialog
+          id="show_details_modal"
+          class="modal modal-bottom sm:modal-middle"
+        >
+          <div id="show-details-container"></div>
+        </dialog>
+      </section>
+
+    
+
+
+
+
+
+      <div class="max-w-7xl mx-auto mt-10">
+        <img class="w-[100%]" src="./mobile-phone-1419275_960_720.jpg" alt="">
+      </div>
+ 
+
+
+
+
+      <section class="max-w-7xl mx-auto  bg-rose-50 py-8 mt-10">
+
+        <div class="flex justify-between mr-10 ml-10 mb-10">
+            <div>
+                <h1 class="text-2xl font-bold ">Hot Gadgets</h1>
+                <p class="font-bold">You can definitely work.</p>
+            </div>
+            <div>
+                <a href="#"><i class="fab fa-facebook-square"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                <button class="btn btn-primary ml-5">AllShow</button>
+            </div>
+        </div>
+       
+
+
+
+
+
+
+
+        <div class="grid grid-cols-4 justify-between ml-10 mb-10">
+            
+       
+        <div>
+          <p>Product</p>
+          <p>Browse jobs</p>
+          <p>Remote jobs</p>
+          <p>Startup jobs</p>
+          <p>Company jobs</p>
+        </div>
+
+        <div>
+          <p>Popular</p>
+          <p>UIUX Design</p>
+          <p>Product Design</p>
+          <p>Back-End Developer</p>
+          <p>Front-End Developer</p>
+        </div>
+
+        <div>
+          <p>Resource</p>
+          <p>Faq</p>
+          <p>Support</p>
+          <p>Resource</p>
+          <p>Terms of Service</p>
+        </div>
+
+        <div>
+          <p>Company</p>
+          <p>About Us</p>
+          <p>Contact Us</p>
+          <p>Career Tips</p>
+          <p>Careers</p>
+        </div>
+
+    </div>
+      </section>
+      <footer class="footer footer-center p-4 bg-black text-base-content max-w-7xl mx-auto">
+        <aside>
+          <p class="text-white">Copyright © 2024 - All right reserved by Md.Elias Hossen</p>
+        </aside>
+      </footer>
+    </main>
+    <script src="phones.js"></script>
+  </body>
+</html>
